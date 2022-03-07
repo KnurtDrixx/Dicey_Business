@@ -16,11 +16,16 @@
     <style src="styles.css"></style>
   </head>
   <body>
-    <button id="rollButton">Roll Dem Bones</button>
-    <button id="addButton">Add em UP</button>
-    <button id></button>
-    <div id="die-container" class="d-flex p-2 flex-row justify-content-start flex-wrap"></div>
-
+    <div class="d-flex justify-content-around">
+      <button class="btn btn-primary" id="rollButton">Roll Dem Bones</button>
+      <button class="btn btn-primary" id="addButton">Add em UP</button>
+      <button class="btn btn-primary" id="rerollButton">Reroll the Bones</button>
+      <button class="btn btn-primary" id="toggleButton">Toggle the Pips</button>
+    </div>
+    <div class="container d-flex">
+      <div id="die-container" class="d-flex p-2 flex-row justify-content-start flex-wrap col-md-6"></div>
+      <div id="sum-container" class="col-md-6"></div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="app.js"></script>
   </body>
